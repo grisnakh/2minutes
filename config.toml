@@ -1,0 +1,214 @@
+# Site settings
+baseurl = "http://example.org/"
+languageCode = "en-us"
+title = "Me. A Simple Hugo Theme"
+theme = "hugo-me-theme"
+paginate = 5
+paginatePath = "page"
+preservetaxonomynames = true
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-XXXXXXX-Y"
+
+[params]
+    
+	# You may choose a color scheme for your site.
+    # Available schemes are: gray, red, orange, yellow, green, cyan, blue, magenta, brown
+    colorscheme = "blue"
+    
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    author = "Pavel Kanyshev"
+    description = "Me. A Simple Hugo Theme"
+    keywords = "me, hugo, hugo theme, blog, pages, personal site"
+    
+    # Sidebar
+    # Main settings
+    [params.sidebar]
+        name = "Me"
+        description = "A Simple Hugo Theme"
+    
+    # Navigation
+    [[params.sidebar.navigation]]
+        label = "About"
+        link = "/about"
+
+    [[params.sidebar.navigation]]
+        label = "What I Can Do"
+        link = "/skills"
+
+    [[params.sidebar.navigation]]
+        label = "Portfolio"
+        link = "/works"
+
+    [[params.sidebar.navigation]]
+        label = "Contact Me"
+        link = "/contact"
+    
+    # Social links
+    [[params.sidebar.social]]
+        label = "Twitter"
+        icon = "fa-twitter"
+        link = "#"
+
+    [[params.sidebar.social]]
+        label = "Facebook"
+        icon = "fa-facebook"
+        link = "#"
+        
+    [[params.sidebar.social]]
+        label = "Instagram"
+        icon = "fa-instagram"
+        link = "#"
+        
+    [[params.sidebar.social]]
+        label = "Github"
+        icon = "fa-github"
+        link = "#"
+        
+    [[params.sidebar.social]]
+        label = "Email"
+        icon = "fa-envelope"
+        link = "#"
+    
+    # About page
+    [params.about]
+        title = "Hello, It's Me!"
+        intro = "Welcome to my page!"
+        text = "I am a simple responsive theme for [Hugo](http://gohugo.io) based on [Read Only template](http://html5up.net/read-only) by HTML5UP. To install Me just run inside your Hugo project:\n\n    $ mkdir themes\n    $ cd themes\n    $ git clone https://github.com/aerohub/hugo-me-theme.git hugo-me-theme\n\n See [README](//github.com/aerohub/hugo-me-theme) for more information."
+    
+    # Skills page
+    [params.skills]
+        title ="Things I Can Do For You"
+        intro = "I can present you, your skills and works to the whole world."
+            
+        # List of skills or features or services
+        [[params.skills.list]]
+            icon = "fa-user"
+            description = "Show your avatar"
+    
+        [[params.skills.list]]
+            icon = "fa-list"
+            description = "Tell about your skills"
+    
+        [[params.skills.list]]
+            icon = "fa-picture-o"
+            description = "Perform your works"
+    
+        [[params.skills.list]]
+            icon = "fa-envelope"
+            description = "Communicate with your visitors"
+    
+        [[params.skills.list]]
+            icon = "fa-link"
+            description = "Link your socials"
+    
+        [[params.skills.list]]
+            icon = "fa-usd"
+            description = "Make you rich. Joke. Not Me."
+            
+    # Works page
+    [params.works]
+        title ="Few Works Made by Me"
+        intro = "Let Me present here its color schemes"
+        
+        [[params.works.show]]
+            title = "Red Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "red.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+            
+        [[params.works.show]]
+            title = "Orange Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "orange.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+            
+        [[params.works.show]]
+            title = "Green Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "green.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+
+        [[params.works.show]]
+            title = "Yellow Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "yellow.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+        
+        [[params.works.show]]
+            title = "Blue Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "blue.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+            
+        [[params.works.show]]
+            title = "Magenta Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "magenta.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+            
+        [[params.works.show]]
+            title = "Cyan Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "cyan.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+
+        [[params.works.show]]
+            title = "Brown Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "brown.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+
+        [[params.works.show]]
+            title = "Gray Color Scheme"
+            description = "Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet."
+            image = "gray.png"
+            link = "https://github.com/aerohub/hugo-me-theme"
+    
+    # Contact page
+    
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    
+    email = "you@yoursite.com"
+    
+    [params.contact]
+        title ="Contact Me"
+        intro = "Since this theme is static, the contact form uses [Formspree](http://www.formspree.io) as a proxy."
+        buttonText = "Send Message"
+        resetText = "Reset Form"
+        
+        # 'warning' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Name *"
+            warning = "Please, enter your name"
+
+        [params.contact.form.email]
+            text = "Email *"
+            warning = "Please, enter your email."
+
+        [params.contact.form.phone]
+            text = "Subject"
+
+        [params.contact.form.message]
+            text = "Message *"
+            warning = "Please, enter your message"
+    
+    # 404 page
+    [params.error]
+        title = "404"
+        intro = "Oops... Page not found!"
+        text = "We are sorry, but the page you are looking for might have been:\n\n - removed,\n - had its name changed\n - or is temporarily unavailable."
+    
+    # Footer
+    [params.footer]
+        copyright = "[Me. A Simple Hugo Theme](https://github.com/aerohub/hugo-me-theme). All rights reserved."
